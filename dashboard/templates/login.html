@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberAI — Login</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Courier New',monospace;background:#060d1a;color:#e0e8f0;
+     min-height:100vh;display:flex;align-items:center;justify-content:center;}
+.wrap{width:380px;padding:40px;background:#0d1f35;border:1px solid #1a3a5c;
+      border-radius:8px;box-shadow:0 0 40px rgba(0,120,255,.15)}
+.logo{text-align:center;margin-bottom:30px}
+.logo h1{font-size:22px;color:#4db8ff;letter-spacing:3px;font-weight:700}
+.logo p{font-size:11px;color:#5080a0;margin-top:6px;letter-spacing:1px}
+.field{margin-bottom:18px}
+label{display:block;font-size:11px;color:#5080a0;letter-spacing:1px;
+      text-transform:uppercase;margin-bottom:6px}
+input{width:100%;padding:10px 14px;background:#0a1828;border:1px solid #1a3a5c;
+      border-radius:4px;color:#e0e8f0;font-family:inherit;font-size:14px;outline:none}
+input:focus{border-color:#4db8ff}
+.btn{width:100%;padding:12px;background:#1a56db;border:none;border-radius:4px;
+     color:#fff;font-size:14px;font-weight:700;cursor:pointer;
+     letter-spacing:1px;text-transform:uppercase;transition:background .2s}
+.btn:hover{background:#2563eb}
+.err{color:#f87171;font-size:12px;text-align:center;margin-top:12px;display:none}
+.hint{text-align:center;font-size:11px;color:#3a6080;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">
+    <h1>CYBER AI</h1>
+    <p>AUTONOMOUS DEFENSE SYSTEM</p>
+  </div>
+  <div class="field">
+    <label>Username</label>
+    <input id="u" type="text" placeholder="yashwanth" autocomplete="username">
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <input id="p" type="password" placeholder="••••••••••" autocomplete="current-password">
+  </div>
+  <button class="btn" onclick="doLogin()">ACCESS SYSTEM</button>
+  <div class="err" id="err">Invalid credentials</div>
+  <div class="hint">Default: yashwanth / CyberAI2024</div>
+</div>
+<script>
+async function doLogin(){
+  const u = document.getElementById('u').value;
+  const p = document.getElementById('p').value;
+  const errDiv = document.getElementById('err');
+  
+  if(!u || !p){
+    errDiv.style.display = 'block';
+    errDiv.textContent = 'Please enter username and password';
+    return;
+  }
+  
+  const btn = document.querySelector('.btn');
+  btn.disabled = true;
+  btn.textContent = 'LOGGING IN...';
+  
+  try {
+    const response = await fetch('/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest'   // <-- ADD THIS LINE
+      },
+      body: JSON.stringify({ username: u, password: p }),
+      credentials: 'include'
+    });
+    
+    const data = await response.json();
+    
+    if(data.success){
+      window.location.href = data.redirect || '/';
+    } else {
+      errDiv.style.display = 'block';
+      errDiv.textContent = data.error || 'Invalid credentials';
+      btn.disabled = false;
+      btn.textContent = 'ACCESS SYSTEM';
+    }
+  } catch(e) {
+    errDiv.style.display = 'block';
+    errDiv.textContent = 'Network error. Please try again.';
+    btn.disabled = false;
+    btn.textContent = 'ACCESS SYSTEM';
+  }
+}
+
+document.addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
+</script>
+</body>
+</html>

@@ -1,0 +1,4083 @@
+[
+  {
+    "result": {
+      "level": "HIGH",
+      "risk": 0.71,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 45 events",
+        "MITRE T1055.012: Process Hollowing",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1548: Privilege Escalation Detected"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "admin_access",
+        "ip": "local",
+        "username": "unknown",
+        "event_id": 4672,
+        "timestamp": 1774516258.0,
+        "source": "windows_event_log",
+        "severity": "HIGH"
+      },
+      {
+        "type": "login_success",
+        "ip": "-",
+        "username": "SYSTEM",
+        "event_id": 4624,
+        "timestamp": 1774516258.0,
+        "source": "windows_event_log",
+        "severity": "INFO"
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516366.1122007
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516366.1202018
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516386.6627927
+      }
+    ],
+    "time": 1774516404.5206
+  },
+  {
+    "result": {
+      "level": "HIGH",
+      "risk": 0.71,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 14 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516409.5868578
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516409.6040678
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516425.9613564
+      },
+      {
+        "type": "port_connect",
+        "ip": "local",
+        "username": "unknown",
+        "port": 2222,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "detail": "New service listening on port 2222",
+        "timestamp": 1774516425.9703534
+      },
+      {
+        "type": "port_connect",
+        "ip": "local",
+        "username": "unknown",
+        "port": 21,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "detail": "New service listening on port 21",
+        "timestamp": 1774516425.9703534
+      }
+    ],
+    "time": 1774516446.6349466
+  },
+  {
+    "result": {
+      "level": "HIGH",
+      "risk": 0.585,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 7 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516451.7132308
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516451.7256374
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516468.0422883
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774516470.3845332
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "cmd.exe",
+        "detail": "C:\\WINDOWS\\system32\\cmd.exe /c C:\\Xilinx\\xic\\bin\\xic.bat -c -t",
+        "source": "mitre_execution",
+        "timestamp": 1774516470.3845332
+      }
+    ],
+    "time": 1774516485.8048313
+  },
+  {
+    "result": {
+      "level": "HIGH",
+      "risk": 0.66,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 11 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516490.8706875
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516490.8867295
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516507.0949733
+      },
+      {
+        "type": "port_connect",
+        "ip": "34.36.73.246",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516507.1410346,
+        "detail": "New connection 34.36.73.246:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "34.36.73.246",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516507.1410346,
+        "detail": "New connection 34.36.73.246:443"
+      }
+    ],
+    "time": 1774516527.717378
+  },
+  {
+    "result": {
+      "level": "HIGH",
+      "risk": 0.71,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 13 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516532.7714596
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516532.7774675
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516548.9962137
+      },
+      {
+        "type": "port_connect",
+        "ip": "20.190.145.140",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516549.0002153,
+        "detail": "New connection 20.190.145.140:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2620:1ec:33::11",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516549.0002153,
+        "detail": "New connection 2620:1ec:33::11:443"
+      }
+    ],
+    "time": 1774516566.9078586
+  },
+  {
+    "result": {
+      "level": "HIGH",
+      "risk": 0.71,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 13 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516571.9735243
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516571.985245
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516588.2782423
+      },
+      {
+        "type": "port_connect",
+        "ip": "3.254.238.163",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516588.2891471,
+        "detail": "New connection 3.254.238.163:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "104.208.16.90",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516588.2891471,
+        "detail": "New connection 104.208.16.90:443"
+      }
+    ],
+    "time": 1774516608.8061836
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 9 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516613.8878427
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516613.9008589
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "Window Manager\\DWM-2",
+        "pid": 16664,
+        "process": "dwm.exe",
+        "cpu": 66.5,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516624.8842418
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516630.1452477
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516630.1497912,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      }
+    ],
+    "time": 1774516647.9684484
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 14 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516653.032734
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516653.0417414
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "NT AUTHORITY\\SYSTEM",
+        "pid": 4,
+        "process": "System",
+        "cpu": 99.7,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516653.1767948
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 20496,
+        "process": "msedge.exe",
+        "cpu": 66.5,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516665.8705187
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516669.4719121
+      }
+    ],
+    "time": 1774516690.076341
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 14 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516695.1293764
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516695.137329
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 1700,
+        "process": "msedge.exe",
+        "cpu": 75.6,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516696.310873
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 11048,
+        "process": "chrome.exe",
+        "cpu": 169.8,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516704.1438231
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516711.5254388
+      }
+    ],
+    "time": 1774516729.3557947
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 12 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516734.4312313
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516734.4500089
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516750.850535
+      },
+      {
+        "type": "port_connect",
+        "ip": "2607:6bc0::10",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516750.858796,
+        "detail": "New connection 2607:6bc0::10:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2606:4700:83b2:e632:f4a7:6da:6811:180e",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516750.858796,
+        "detail": "New connection 2606:4700:83b2:e632:f4a7:6da:6811:180e:443"
+      }
+    ],
+    "time": 1774516771.695429
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 9 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516776.749206
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516776.7703075
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516793.075055
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:140f:ec00::17df:f40b",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516793.0818484,
+        "detail": "New connection 2600:140f:ec00::17df:f40b:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2620:1ec:bdf::68",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516793.0818484,
+        "detail": "New connection 2620:1ec:bdf::68:443"
+      }
+    ],
+    "time": 1774516810.9616995
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 9 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516816.0560937
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516816.0738432
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 1700,
+        "process": "msedge.exe",
+        "cpu": 66.5,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516817.2557695
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516832.5479403
+      },
+      {
+        "type": "port_connect",
+        "ip": "13.69.116.108",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516832.5583708,
+        "detail": "New connection 13.69.116.108:443"
+      }
+    ],
+    "time": 1774516853.5517242
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 16 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516858.6363873
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516858.6443622
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 1700,
+        "process": "msedge.exe",
+        "cpu": 66.5,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516859.797412
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 11680,
+        "process": "OmenCommandCenterBackground.exe",
+        "cpu": 67.9,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516867.902449
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516875.0168178
+      }
+    ],
+    "time": 1774516892.6818202
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 12 events",
+        "MITRE T1055.012: Process Hollowing",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516909.0195603
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516909.027886
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516929.7209868
+      },
+      {
+        "type": "port_connect",
+        "ip": "2603:1046:c04:89f::2",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516929.7239878,
+        "detail": "New connection 2603:1046:c04:89f::2:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2603:1046:c04:89f::2",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774516929.7239878,
+        "detail": "New connection 2603:1046:c04:89f::2:443"
+      }
+    ],
+    "time": 1774516947.4466512
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 41 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516952.485999
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516952.4952993
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516968.0873015
+      },
+      {
+        "type": "port_connect",
+        "ip": "local",
+        "username": "unknown",
+        "port": 21,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "detail": "New service listening on port 21",
+        "timestamp": 1774516968.0894282
+      },
+      {
+        "type": "port_connect",
+        "ip": "local",
+        "username": "unknown",
+        "port": 9999,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "detail": "New service listening on port 9999",
+        "timestamp": 1774516968.0894282
+      }
+    ],
+    "time": 1774516988.3287635
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 12 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516993.373233
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516993.3900037
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517008.1774874
+      },
+      {
+        "type": "port_connect",
+        "ip": "2620:1ec:33::11",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517008.1912682,
+        "detail": "New connection 2620:1ec:33::11:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2620:1ec:33::11",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517008.1912682,
+        "detail": "New connection 2620:1ec:33::11:443"
+      }
+    ],
+    "time": 1774517025.8471653
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517030.929033
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517030.9438024
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517045.6643412
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517047.878676
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "cmd.exe",
+        "detail": "C:\\WINDOWS\\system32\\cmd.exe /c C:\\Xilinx\\xic\\bin\\xic.bat -c -t",
+        "source": "mitre_execution",
+        "timestamp": 1774517047.878676
+      }
+    ],
+    "time": 1774517065.9492867
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 7 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517071.0127828
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517071.0264354
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517085.8303041
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517088.1285937
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "cmd.exe",
+        "detail": "C:\\WINDOWS\\system32\\cmd.exe /c C:\\Xilinx\\xic\\bin\\xic.bat -c -t",
+        "source": "mitre_execution",
+        "timestamp": 1774517088.1285937
+      }
+    ],
+    "time": 1774517103.3320997
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517108.3961353
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517108.3961353
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517123.2687063
+      },
+      {
+        "type": "port_connect",
+        "ip": "34.36.73.246",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517123.2687063,
+        "detail": "New connection 34.36.73.246:443"
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517125.5206413
+      }
+    ],
+    "time": 1774517143.6179838
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 43 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517148.6899955
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517148.7000005
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 13188,
+        "process": "msedge.exe",
+        "cpu": 50.4,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517158.4841666
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517163.9179904
+      },
+      {
+        "type": "port_connect",
+        "ip": "2001:4860:4802:38::223",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517163.919801,
+        "detail": "New connection 2001:4860:4802:38::223:443"
+      }
+    ],
+    "time": 1774517181.6364396
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 14 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517186.728371
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517186.7418373
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517202.0831068
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4009:80a::200e",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517202.084376,
+        "detail": "New connection 2404:6800:4009:80a::200e:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "142.251.221.230",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517202.084376,
+        "detail": "New connection 142.251.221.230:443"
+      }
+    ],
+    "time": 1774517222.3510547
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 21 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517227.398199
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517227.414552
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517242.7196243
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4009:812::2003",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517242.7196243,
+        "detail": "New connection 2404:6800:4009:812::2003:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2620:1ec:bdf::72",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517242.7196243,
+        "detail": "New connection 2620:1ec:bdf::72:443"
+      }
+    ],
+    "time": 1774517260.3625846
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 19 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517265.445552
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517265.4668398
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 12420,
+        "process": "msedge.exe",
+        "cpu": 50.4,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517274.9070733
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517281.046099
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4009:82b::2003",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517281.0622518,
+        "detail": "New connection 2404:6800:4009:82b::2003:443"
+      }
+    ],
+    "time": 1774517301.3366582
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 10 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517306.4070477
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517306.4070477
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517321.9029856
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4000:1015::5e",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517321.9190156,
+        "detail": "New connection 2404:6800:4000:1015::5e:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4009:81e::200a",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517321.9190156,
+        "detail": "New connection 2404:6800:4009:81e::200a:443"
+      }
+    ],
+    "time": 1774517339.5348554
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517344.583354
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517344.583354
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "Window Manager\\DWM-2",
+        "pid": 16664,
+        "process": "dwm.exe",
+        "cpu": 101.9,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517355.3939106
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517360.1516356
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517362.3974984
+      }
+    ],
+    "time": 1774517380.5240026
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517385.589678
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517385.601351
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517400.9725437
+      },
+      {
+        "type": "port_connect",
+        "ip": "20.189.173.2",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517400.9725437,
+        "detail": "New connection 20.189.173.2:443"
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517403.1925669
+      }
+    ],
+    "time": 1774517418.5043423
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517423.5385783
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517423.5543265
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517438.91281
+      },
+      {
+        "type": "port_connect",
+        "ip": "20.189.173.2",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517438.9210413,
+        "detail": "New connection 20.189.173.2:443"
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517441.1443856
+      }
+    ],
+    "time": 1774517459.1037626
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 10 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517464.1800318
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517464.1896317
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 12420,
+        "process": "msedge.exe",
+        "cpu": 99.7,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517473.5725582
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517479.5563653
+      },
+      {
+        "type": "port_connect",
+        "ip": "2603:1063:1f:104::365:7ea3",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517479.5563653,
+        "detail": "New connection 2603:1063:1f:104::365:7ea3:443"
+      }
+    ],
+    "time": 1774517497.203884
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 9 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517502.2598395
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517502.2658572
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517517.458958
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517517.458958,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517519.6912448
+      }
+    ],
+    "time": 1774517537.7420278
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 11 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517542.804871
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517542.8207002
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "NT AUTHORITY\\SYSTEM",
+        "pid": 4,
+        "process": "System",
+        "cpu": 66.5,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517542.944525
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517558.240913
+      },
+      {
+        "type": "port_connect",
+        "ip": "2620:1ec:bdf::72",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517558.240913,
+        "detail": "New connection 2620:1ec:bdf::72:443"
+      }
+    ],
+    "time": 1774517607.9535787
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 35 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517613.0534108
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517613.071092
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "NT AUTHORITY\\SYSTEM",
+        "pid": 4,
+        "process": "System",
+        "cpu": 133.0,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517613.2072425
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517628.427889
+      },
+      {
+        "type": "port_connect",
+        "ip": "2603:1040:a03:9::195",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517628.4358447,
+        "detail": "New connection 2603:1040:a03:9::195:443"
+      }
+    ],
+    "time": 1774517646.3602443
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 33 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517651.421634
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517651.421634
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517667.1517599
+      },
+      {
+        "type": "port_connect",
+        "ip": "18.97.36.70",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517667.1607637,
+        "detail": "New connection 18.97.36.70:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2607:6bc0::10",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517667.1607637,
+        "detail": "New connection 2607:6bc0::10:443"
+      }
+    ],
+    "time": 1774517687.4386733
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 12 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517692.4991882
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517692.5044317
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517707.941876
+      },
+      {
+        "type": "port_connect",
+        "ip": "34.36.73.246",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517707.941876,
+        "detail": "New connection 34.36.73.246:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "174.129.2.219",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517707.941876,
+        "detail": "New connection 174.129.2.219:443"
+      }
+    ],
+    "time": 1774517725.4588125
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517730.488145
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517730.5042422
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517745.7454255
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517747.9572191
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "cmd.exe",
+        "detail": "C:\\WINDOWS\\system32\\cmd.exe /c C:\\Xilinx\\xic\\bin\\xic.bat -c -t",
+        "source": "mitre_execution",
+        "timestamp": 1774517747.9572191
+      }
+    ],
+    "time": 1774517765.973053
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517771.041354
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517771.058752
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 12420,
+        "process": "msedge.exe",
+        "cpu": 66.5,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517780.282409
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517786.2776446
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517788.505737
+      }
+    ],
+    "time": 1774517803.7734604
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517808.841739
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517808.8442743
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517824.0457866
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517824.0640304,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517826.354727
+      }
+    ],
+    "time": 1774517844.3839693
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 25 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517849.4523032
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517849.4684205
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517864.8138993
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4009:80b::2008",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517864.8232756,
+        "detail": "New connection 2404:6800:4009:80b::2008:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4009:820::2003",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517864.8232756,
+        "detail": "New connection 2404:6800:4009:820::2003:443"
+      }
+    ],
+    "time": 1774517882.6291366
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 10 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517887.7115128
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517887.7303193
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517903.138292
+      },
+      {
+        "type": "port_connect",
+        "ip": "13.107.137.11",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517903.1473534,
+        "detail": "New connection 13.107.137.11:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "142.251.221.230",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517903.1473534,
+        "detail": "New connection 142.251.221.230:443"
+      }
+    ],
+    "time": 1774517923.58948
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 11 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517928.6775563
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517928.6933868
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517943.9594507
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4000:1006::5e",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517943.9624517,
+        "detail": "New connection 2404:6800:4000:1006::5e:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774517943.9624517,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      }
+    ],
+    "time": 1774517961.5459468
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 9 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading",
+        "MITRE T1048: Exfiltration Over Alternative Protocol"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517966.5983837
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517966.6105993
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774517981.94871
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774517984.2345052
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "cmd.exe",
+        "detail": "C:\\WINDOWS\\system32\\cmd.exe /c C:\\Xilinx\\xic\\bin\\xic.bat -c -t",
+        "source": "mitre_execution",
+        "timestamp": 1774517984.2345052
+      }
+    ],
+    "time": 1774518002.4390438
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 10 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1548: Privilege Escalation Detected",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "admin_access",
+        "ip": "local",
+        "username": "unknown",
+        "event_id": 4672,
+        "timestamp": 1774517967.0,
+        "source": "windows_event_log",
+        "severity": "HIGH"
+      },
+      {
+        "type": "login_success",
+        "ip": "-",
+        "username": "SYSTEM",
+        "event_id": 4624,
+        "timestamp": 1774517967.0,
+        "source": "windows_event_log",
+        "severity": "INFO"
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518007.5095484
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518007.5125425
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518022.837551
+      }
+    ],
+    "time": 1774518040.5567791
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 9 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518045.6748803
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518045.6830301
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518061.0269475
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518061.0299504,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774518063.3169138
+      }
+    ],
+    "time": 1774518081.6255634
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518086.6957014
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518086.7104065
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518101.9318595
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518101.9383993,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774518104.185537
+      }
+    ],
+    "time": 1774518119.617047
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 12 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518124.6759932
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518124.6869729
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 12420,
+        "process": "msedge.exe",
+        "cpu": 50.4,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518133.904474
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518139.9575248
+      },
+      {
+        "type": "port_connect",
+        "ip": "2603:1046:c04:140d::2",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518139.96352,
+        "detail": "New connection 2603:1046:c04:140d::2:443"
+      }
+    ],
+    "time": 1774518160.3602753
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 17 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518165.456724
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518165.4761574
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518181.0535254
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:140f:ec00::17df:f493",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518181.0575342,
+        "detail": "New connection 2600:140f:ec00::17df:f493:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518181.0575342,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      }
+    ],
+    "time": 1774518198.890363
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 27 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518203.9731483
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518203.9859717
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 1992,
+        "process": "chrome.exe",
+        "cpu": 99.7,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518205.4263918
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 12420,
+        "process": "msedge.exe",
+        "cpu": 99.7,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518213.368129
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518219.8091738
+      }
+    ],
+    "time": 1774518240.5959284
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 9 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518245.7034712
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518245.7210467
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "NT AUTHORITY\\SYSTEM",
+        "pid": 4,
+        "process": "System",
+        "cpu": 75.6,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518245.8578365
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518261.404396
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518261.4065754,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      }
+    ],
+    "time": 1774518279.2394042
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 21 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518284.2826135
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518284.2826135
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "NT AUTHORITY\\SYSTEM",
+        "pid": 4,
+        "process": "System",
+        "cpu": 74.4,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518284.4229555
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "Window Manager\\DWM-2",
+        "pid": 16664,
+        "process": "dwm.exe",
+        "cpu": 99.7,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518294.8631804
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518299.9085784
+      }
+    ],
+    "time": 1774518320.2942164
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 10 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518325.346862
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518325.35989
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518340.8729584
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518340.8729584,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "35.215.90.198",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518340.8729584,
+        "detail": "New connection 35.215.90.198:443"
+      }
+    ],
+    "time": 1774518358.7428412
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 8 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518363.8285294
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518363.844793
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518379.3615053
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774518381.60406
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "cmd.exe",
+        "detail": "C:\\WINDOWS\\system32\\cmd.exe /c C:\\Xilinx\\xic\\bin\\xic.bat -c -t",
+        "source": "mitre_execution",
+        "timestamp": 1774518381.60406
+      }
+    ],
+    "time": 1774518399.7409086
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 22 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518404.8246963
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518404.8336987
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "NT AUTHORITY\\SYSTEM",
+        "pid": 4,
+        "process": "System",
+        "cpu": 199.5,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518404.963882
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518420.502322
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4009:826::200a",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518420.511643,
+        "detail": "New connection 2404:6800:4009:826::200a:443"
+      }
+    ],
+    "time": 1774518438.3118188
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 0.89,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 9 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518443.40049
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518443.4194274
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518459.1172276
+      },
+      {
+        "type": "port_connect",
+        "ip": "2620:1ec:29:1::68",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518459.123035,
+        "detail": "New connection 2620:1ec:29:1::68:443"
+      },
+      {
+        "type": "mitre_detection",
+        "technique_id": "T1059",
+        "technique_name": "Command and Scripting Interpreter",
+        "tactic": "Execution",
+        "severity": "HIGH",
+        "ip": "local",
+        "username": "unknown",
+        "process": "powershell.exe",
+        "detail": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "source": "mitre_execution",
+        "timestamp": 1774518461.3297853
+      }
+    ],
+    "time": 1774518479.4710515
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 9 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518484.5537016
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518484.5753694
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 13188,
+        "process": "msedge.exe",
+        "cpu": 74.4,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518494.5753992
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518500.3118715
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4009:80b::2001",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518500.3291504,
+        "detail": "New connection 2404:6800:4009:80b::2001:443"
+      }
+    ],
+    "time": 1774518518.0865414
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 10 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518523.1762712
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518523.1923943
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518538.8727624
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518538.8777282,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "20.189.173.27",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518538.8777282,
+        "detail": "New connection 20.189.173.27:443"
+      }
+    ],
+    "time": 1774518559.511872
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 11 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518564.6072006
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518564.6240656
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 10824,
+        "process": "chrome.exe",
+        "cpu": 50.4,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518573.48245
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "Window Manager\\DWM-2",
+        "pid": 16664,
+        "process": "dwm.exe",
+        "cpu": 74.4,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518575.3266668
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518580.3280284
+      }
+    ],
+    "time": 1774518598.0796533
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 12 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1036: Masquerading"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518603.1650348
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518603.1813133
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 17656,
+        "process": "chrome.exe",
+        "cpu": 67.9,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518614.2714517
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518618.7974203
+      },
+      {
+        "type": "port_connect",
+        "ip": "2404:6800:4009:803::200e",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518618.8156083,
+        "detail": "New connection 2404:6800:4009:803::200e:443"
+      }
+    ],
+    "time": 1774518639.5920436
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 11 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1046: Network Service Discovery"
+      ],
+      "action": "BLOCK_NETWORK"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518644.689544
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518644.6998425
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518660.3294377
+      },
+      {
+        "type": "port_connect",
+        "ip": "2607:6bc0::10",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518660.3344402,
+        "detail": "New connection 2607:6bc0::10:443"
+      },
+      {
+        "type": "port_connect",
+        "ip": "34.120.108.227",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518660.3344402,
+        "detail": "New connection 34.120.108.227:443"
+      }
+    ],
+    "time": 1774518678.2596056
+  },
+  {
+    "result": {
+      "level": "CRITICAL",
+      "risk": 1.0,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 10 events",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1036: Masquerading",
+        "MITRE T1082: System Information Discovery"
+      ],
+      "action": "MONITOR"
+    },
+    "events": [
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518683.3121717
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518683.330261
+      },
+      {
+        "type": "cpu_spike",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 10824,
+        "process": "chrome.exe",
+        "cpu": 50.4,
+        "source": "process_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518692.0301464
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774518698.8968139
+      },
+      {
+        "type": "port_connect",
+        "ip": "2600:1901:0:179c::",
+        "username": "unknown",
+        "port": 443,
+        "source": "network_monitor",
+        "severity": "MEDIUM",
+        "timestamp": 1774518698.8968139,
+        "detail": "New connection 2600:1901:0:179c:::443"
+      }
+    ],
+    "time": 1774518719.5227652
+  }
+]

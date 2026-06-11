@@ -1,0 +1,17 @@
+{
+  "virustotal_api_key": "",
+  "abuseipdb_api_key": "",
+  "shodan_api_key": "",
+  "alienvault_api_key": "",
+  "alert_email_enabled": false,
+  "alert_smtp_server": "smtp.gmail.com",
+  "alert_smtp_port": 587,
+  "alert_email_user": "",
+  "alert_email_pass": "",
+  "alert_email_recipients": [],
+  "alert_telegram_enabled": false,
+  "telegram_bot_token": "",
+  "telegram_chat_id": "",
+  "alert_webhook_enabled": false,
+  "webhook_url": ""
+}

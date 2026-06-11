@@ -1,0 +1,70 @@
+[
+  {
+    "result": {
+      "level": "HIGH",
+      "risk": 0.71,
+      "reasons": [
+        "Suspicious user behavior detected",
+        "High intensity: 45 events",
+        "MITRE T1055.012: Process Hollowing",
+        "MITRE T1059: Command and Scripting Interpreter",
+        "MITRE T1543: Create or Modify System Process",
+        "MITRE T1548: Privilege Escalation Detected"
+      ],
+      "action": "KILL_PROCESS"
+    },
+    "events": [
+      {
+        "type": "admin_access",
+        "ip": "local",
+        "username": "unknown",
+        "event_id": 4672,
+        "timestamp": 1774516258.0,
+        "source": "windows_event_log",
+        "severity": "HIGH"
+      },
+      {
+        "type": "login_success",
+        "ip": "-",
+        "username": "SYSTEM",
+        "event_id": 4624,
+        "timestamp": 1774516258.0,
+        "source": "windows_event_log",
+        "severity": "INFO"
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 8328,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516366.1122007
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 16388,
+        "process": "adobecollabsync.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516366.1202018
+      },
+      {
+        "type": "suspicious_process",
+        "ip": "local",
+        "username": "MEGHANA\\koush",
+        "pid": 3660,
+        "process": "powershell.exe",
+        "parent": "explorer.exe",
+        "detail": "explorer.exe spawned powershell.exe",
+        "source": "process_monitor",
+        "severity": "CRITICAL",
+        "timestamp": 1774516386.6627927
+      }
+    ],
+    "time": 1774516404.5206
+  }
+]

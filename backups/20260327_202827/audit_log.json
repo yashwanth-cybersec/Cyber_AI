@@ -1,0 +1,1009 @@
+[
+  {
+    "timestamp": "2026-03-26T14:53:16.367293",
+    "approval_id": "C4BEDFED",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:bdf::72",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2620:1ec:bdf::72",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2620:1ec:bdf::72"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T14:53:42.316207",
+    "approval_id": "44E3D8A1",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:bdf::48",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2620:1ec:bdf::48",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2620:1ec:bdf::48"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T14:53:50.959210",
+    "approval_id": "B374588C",
+    "action_type": "BLOCK_IP",
+    "target": "2603:1046:c04:89f::2",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2603:1046:c04:89f::2",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2603:1046:c04:89f::2"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T14:54:04.664118",
+    "approval_id": "AB1A1DC5",
+    "action_type": "BLOCK_IP",
+    "target": "52.182.143.215",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "52.182.143.215",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T14:54:13.345605",
+    "approval_id": "9192FC19",
+    "action_type": "BLOCK_IP",
+    "target": "2603:1061:10::13",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2603:1061:10::13",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2603:1061:10::13"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T14:56:39.442605",
+    "approval_id": "022D61D8",
+    "action_type": "BLOCK_IP",
+    "target": "2404:6800:4009:80b::2001",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2404:6800:4009:80b::2001",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2404:6800:4009:80b::2001"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T14:56:44.649063",
+    "approval_id": "3B94F3D5",
+    "action_type": "BLOCK_IP",
+    "target": "2404:6800:4009:826::2008",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2404:6800:4009:826::2008",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2404:6800:4009:826::2008"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T14:56:52.012326",
+    "approval_id": "CF1F926E",
+    "action_type": "BLOCK_IP",
+    "target": "34.36.73.246",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "34.36.73.246",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T14:57:09.279518",
+    "approval_id": "B6A43E92",
+    "action_type": "BLOCK_IP",
+    "target": "2404:6800:4009:826::2003",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2404:6800:4009:826::2003",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2404:6800:4009:826::2003"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T14:57:16.154968",
+    "approval_id": "85F6C5FA",
+    "action_type": "BLOCK_IP",
+    "target": "2404:6800:4009:80a::200e",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2404:6800:4009:80a::200e",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2404:6800:4009:80a::200e"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:04:03.799216",
+    "approval_id": "7A98A203",
+    "action_type": "BLOCK_IP",
+    "target": "13.107.137.11",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "13.107.137.11",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:04:09.535872",
+    "approval_id": "94392F40",
+    "action_type": "BLOCK_IP",
+    "target": "2404:6800:4009:814::200a",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2404:6800:4009:814::200a",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2404:6800:4009:814::200a"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:04:13.305361",
+    "approval_id": "E4A86A7B",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:bdf::72",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2620:1ec:bdf::72",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2620:1ec:bdf::72"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:04:20.381365",
+    "approval_id": "D3BBB9F6",
+    "action_type": "BLOCK_IP",
+    "target": "2600:1901:0:179c::",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2600:1901:0:179c::",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2600:1901:0:179c::"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:04:27.170876",
+    "approval_id": "323A7757",
+    "action_type": "BLOCK_IP",
+    "target": "2603:1063:1f:104::365:7ea3",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: 2603:1063:1f:104::365:7ea3",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: 2603:1063:1f:104::365:7ea3"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:04:31.481563",
+    "approval_id": "B284B92C",
+    "action_type": "BLOCK_IP",
+    "target": "20.189.173.2",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "20.189.173.2",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:36:22.225339",
+    "approval_id": "80578B17",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:33::10",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:33::10",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:36:28.812028",
+    "approval_id": "0134090F",
+    "action_type": "BLOCK_IP",
+    "target": "2603:1046:2000:90::80",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2603:1046:2000:90::80",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:36:50.389262",
+    "approval_id": "CA9D289F",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:33::11",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:33::11",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:36:55.849559",
+    "approval_id": "FF36089A",
+    "action_type": "BLOCK_IP",
+    "target": "72.154.7.99",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "72.154.7.99",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:37:21.800666",
+    "approval_id": "DB8FA1E0",
+    "action_type": "BLOCK_IP",
+    "target": "2600:1901:0:179c::",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2600:1901:0:179c::",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:41:20.325619",
+    "approval_id": "6B64874E",
+    "action_type": "BLOCK_IP",
+    "target": "192.168.88.1",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "192.168.88.1",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:41:25.249765",
+    "approval_id": "A9E52DDB",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:33::11",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:33::11",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:41:31.436686",
+    "approval_id": "69C10AAF",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:33::10",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:33::10",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T15:41:36.851218",
+    "approval_id": "D08C374F",
+    "action_type": "BLOCK_IP",
+    "target": "2603:1046:c04:ccd::2",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2603:1046:c04:ccd::2",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T16:05:25.004362",
+    "approval_id": "88478F63",
+    "action_type": "BLOCK_IP",
+    "target": "34.36.73.246",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "34.36.73.246",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T16:05:30.163138",
+    "approval_id": "102E91F7",
+    "action_type": "BLOCK_IP",
+    "target": "2600:1901:0:179c::",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2600:1901:0:179c::",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T16:05:37.589275",
+    "approval_id": "642F1DD6",
+    "action_type": "BLOCK_IP",
+    "target": "2404:6800:4003:c11::bc",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2404:6800:4003:c11::bc",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T16:05:43.535868",
+    "approval_id": "594EF8B0",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:29:1::48",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:29:1::48",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T16:05:48.990838",
+    "approval_id": "E6A26016",
+    "action_type": "BLOCK_IP",
+    "target": "52.104.32.39",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "52.104.32.39",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T16:05:54.917868",
+    "approval_id": "0028FD51",
+    "action_type": "BLOCK_IP",
+    "target": "2603:1063:27:1::14",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2603:1063:27:1::14",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:10:26.358243",
+    "approval_id": "39BBF246",
+    "action_type": "BLOCK_IP",
+    "target": "20.42.73.28",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "20.42.73.28",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:10:47.647931",
+    "approval_id": "2861D262",
+    "action_type": "BLOCK_IP",
+    "target": "-",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: -",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: -"
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:11:05.800734",
+    "approval_id": "34921D80",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:33::11",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:33::11",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:11:32.282235",
+    "approval_id": "35C34F94",
+    "action_type": "BLOCK_IP",
+    "target": "2404:6800:4009:824::2005",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2404:6800:4009:824::2005",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:11:41.590095",
+    "approval_id": "E624F19D",
+    "action_type": "BLOCK_IP",
+    "target": "35.219.153.27",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "35.219.153.27",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:11:49.854378",
+    "approval_id": "9345840F",
+    "action_type": "BLOCK_IP",
+    "target": "2600:1901:0:179c::",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2600:1901:0:179c::",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:18:50.306749",
+    "approval_id": "925A648F",
+    "action_type": "BLOCK_IP",
+    "target": "20.189.173.24",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "20.189.173.24",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:18:56.063509",
+    "approval_id": "824808F3",
+    "action_type": "BLOCK_IP",
+    "target": "13.107.137.11",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "13.107.137.11",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:19:05.813514",
+    "approval_id": "B90B98DD",
+    "action_type": "BLOCK_IP",
+    "target": "2606:4700:83b1:d8b7:9a42:6dc:ccf5:ac50",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2606:4700:83b1:d8b7:9a42:6dc:ccf5:ac50",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:19:23.750519",
+    "approval_id": "7BBE848A",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:bdf::72",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:bdf::72",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-26T21:19:29.628722",
+    "approval_id": "211C4CDE",
+    "action_type": "BLOCK_IP",
+    "target": "129.227.206.1",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "129.227.206.1",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T10:00:19.295632",
+    "approval_id": "3FBB16D6",
+    "action_type": "BLOCK_IP",
+    "target": "20.190.145.140",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "20.190.145.140",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T10:00:25.463072",
+    "approval_id": "7C160BBC",
+    "action_type": "BLOCK_IP",
+    "target": "172.188.155.25",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "172.188.155.25",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T10:04:46.951048",
+    "approval_id": "5B5E5ADC",
+    "action_type": "BLOCK_IP",
+    "target": "15.72.80.217",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "15.72.80.217",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T10:27:39.163744",
+    "approval_id": "AF08A184",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:33::11",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:33::11",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:50:36.443682",
+    "approval_id": "92301E83",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:33::10",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:33::10",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:50:41.872258",
+    "approval_id": "2F170031",
+    "action_type": "BLOCK_IP",
+    "target": "2600:140f:ec00::17df:f442",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2600:140f:ec00::17df:f442",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:56:40.905158",
+    "approval_id": "7AF35A32",
+    "action_type": "BLOCK_IP",
+    "target": "13.89.179.13",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "13.89.179.13",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:56:51.744221",
+    "approval_id": "5DC31D16",
+    "action_type": "BLOCK_IP",
+    "target": "2600:140f:ec00::17df:f429",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2600:140f:ec00::17df:f429",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:56:53.192227",
+    "approval_id": "03152D5B",
+    "action_type": "BLOCK_IP",
+    "target": "-",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "Invalid IP: -",
+    "result": {
+      "success": false,
+      "error": "Invalid IP: -"
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:56:54.996859",
+    "approval_id": "BEC7A12A",
+    "action_type": "BLOCK_IP",
+    "target": "2a04:4e42:8d::684",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2a04:4e42:8d::684",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:57:01.193462",
+    "approval_id": "234AA12A",
+    "action_type": "BLOCK_IP",
+    "target": "20.42.65.91",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "20.42.65.91",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:57:12.989511",
+    "approval_id": "249EA1F3",
+    "action_type": "BLOCK_IP",
+    "target": "34.36.73.246",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "34.36.73.246",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:58:34.458607",
+    "approval_id": "477B6706",
+    "action_type": "BLOCK_IP",
+    "target": "13.89.179.13",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "13.89.179.13",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:58:46.011652",
+    "approval_id": "DC7A8BC4",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:bdf::72",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:bdf::72",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:58:51.394112",
+    "approval_id": "71363865",
+    "action_type": "BLOCK_IP",
+    "target": "52.104.32.39",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "52.104.32.39",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T11:59:00.746660",
+    "approval_id": "B77DBCF0",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:33::11",
+    "approved_by": "user+admin",
+    "success": true,
+    "output": "Ok.",
+    "result": {
+      "success": true,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:33::11",
+      "output": "Ok."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:05:59.490775",
+    "approval_id": "DCF19B66",
+    "action_type": "BLOCK_IP",
+    "target": "2600:140f:ec00::17c9:2f33",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "2600:140f:ec00::17c9:2f33",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:04.819604",
+    "approval_id": "5436E598",
+    "action_type": "BLOCK_IP",
+    "target": "52.168.112.67",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "52.168.112.67",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:10.646020",
+    "approval_id": "1B77AEA8",
+    "action_type": "BLOCK_IP",
+    "target": "2603:1063:10:121::365:7ea3",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "2603:1063:10:121::365:7ea3",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:16.699881",
+    "approval_id": "B601C67B",
+    "action_type": "BLOCK_IP",
+    "target": "52.178.17.235",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "52.178.17.235",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:20.471016",
+    "approval_id": "BC483BEC",
+    "action_type": "BLOCK_IP",
+    "target": "40.126.17.133",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "40.126.17.133",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:26.655540",
+    "approval_id": "FE392765",
+    "action_type": "BLOCK_IP",
+    "target": "2603:1046:c04:140c::2",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "2603:1046:c04:140c::2",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:31.498238",
+    "approval_id": "22DDF40B",
+    "action_type": "BLOCK_IP",
+    "target": "2603:1040:a06:6::2",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "2603:1040:a06:6::2",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:37.042716",
+    "approval_id": "25393689",
+    "action_type": "BLOCK_IP",
+    "target": "52.182.143.211",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "52.182.143.211",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:41.860313",
+    "approval_id": "D1BA7B8E",
+    "action_type": "BLOCK_IP",
+    "target": "20.42.73.30",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "20.42.73.30",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:46.881639",
+    "approval_id": "33138AAF",
+    "action_type": "BLOCK_IP",
+    "target": "2600:140f:ec00::17c9:2f10",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "2600:140f:ec00::17c9:2f10",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  },
+  {
+    "timestamp": "2026-03-27T19:06:52.386963",
+    "approval_id": "06649CAD",
+    "action_type": "BLOCK_IP",
+    "target": "2620:1ec:bdf::72",
+    "approved_by": "user+admin",
+    "success": false,
+    "output": "The requested operation requires elevation (Run as administrator).",
+    "result": {
+      "success": false,
+      "action": "BLOCK_IP",
+      "target": "2620:1ec:bdf::72",
+      "output": "The requested operation requires elevation (Run as administrator)."
+    }
+  }
+]

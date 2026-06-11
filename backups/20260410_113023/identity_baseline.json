@@ -1,0 +1,43 @@
+{
+  "MEGHANA\\koush": {
+    "login_hours": [],
+    "login_ips": [],
+    "fail_counts": [],
+    "login_count": 0,
+    "last_seen": 0
+  },
+  "Window Manager\\DWM-2": {
+    "login_hours": [],
+    "login_ips": [],
+    "fail_counts": [],
+    "login_count": 0,
+    "last_seen": 0
+  },
+  "NT AUTHORITY\\SYSTEM": {
+    "login_hours": [],
+    "login_ips": [],
+    "fail_counts": [],
+    "login_count": 0,
+    "last_seen": 0
+  },
+  "koushikudupa1997@gmail.com": {
+    "login_hours": [
+      20,
+      14,
+      11
+    ],
+    "login_ips": [
+      "-"
+    ],
+    "fail_counts": [],
+    "login_count": 6,
+    "last_seen": 1775799403.6900554
+  },
+  "Window Manager\\DWM-6": {
+    "login_hours": [],
+    "login_ips": [],
+    "fail_counts": [],
+    "login_count": 0,
+    "last_seen": 0
+  }
+}

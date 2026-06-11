@@ -1,0 +1,18 @@
+flask
+flask-cors
+colorama
+psutil
+scikit-learn
+networkx
+numpy
+cryptography
+pyopenssl
+requests
+reportlab          # PDF generation
+weasyprint         # Alternative PDF
+pytz               # Timezone handling
+python-dateutil    # Date parsing
+scapy              # Packet capture (optional)
+pyshark            # Packet analysis (optional)
+python-nmap        # Nmap integration
+geoip2             # GeoIP database

@@ -1,0 +1,306 @@
+{
+  "auth.json": {
+    "hash": "9e0c6a2f1879d7ced27a3bcd1268e7e6946d86ad3b9bb08dc5d6f3fe1154abc4",
+    "ts": 1774516366.0231194
+  },
+  "realtime_engine.py": {
+    "hash": "4700d8c556e479bb5a89a92e945ff00948df2c89cea23019343cbca54a987a00",
+    "ts": 1774516366.0231194
+  },
+  "requirements.txt": {
+    "hash": "21d611b8fbda536937115aeda738b9c255bdf6afc904e8583d712d970f60a649",
+    "ts": 1774516366.0241032
+  },
+  "run_all.py": {
+    "hash": "8e69e063e76893ac411ce2d2e9f48d1563d8ee3f4ed3c9c2e85457cce542923e",
+    "ts": 1774516366.0241032
+  },
+  "advanced\\advanced_engine.py": {
+    "hash": "5297f0b3b1d0276e05068f471d758e0c76d40f84c05c3b996b1c7062206ba1cf",
+    "ts": 1774516366.0241032
+  },
+  "advanced\\identity_anomaly_detector.py": {
+    "hash": "695b3984bb03a4d3780856357f88c3342a6863b09f92908fefbb5911afaa8b77",
+    "ts": 1774516366.0241032
+  },
+  "advanced\\polymorphic_detector.py": {
+    "hash": "7751aa443bbcd2c1bfe0866d4ad753549dc22827733995ab3b3fb3296729d54a",
+    "ts": 1774516366.0241032
+  },
+  "advanced\\prompt_injection_guard.py": {
+    "hash": "90ba19b5765f52b0b526e70c1a712b62ccde275ecee62e554c4fa0c20e5eb424",
+    "ts": 1774516366.0241032
+  },
+  "advanced\\__init__.py": {
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "ts": 1774516366.0241032
+  },
+  "agents\\anomaly_agent.py": {
+    "hash": "a691933a9ba4dcd2490beb5d37e2d0932b88cfc0e183c5e23dfe1f9d89b37fa1",
+    "ts": 1774516366.0241032
+  },
+  "agents\\behavior_agent.py": {
+    "hash": "8ee76c83b9f182a3691aaf6daf76b0e8fc0f0f75f4b5381588b2f97c562c6af0",
+    "ts": 1774516366.0241032
+  },
+  "agents\\__init__.py": {
+    "hash": "e2868acbd2aff6e61b37bc492524f80dcc6c7160e3fc5aabf6a118489e288a9a",
+    "ts": 1774516366.0241032
+  },
+  "core\\decision.py": {
+    "hash": "9085e7a3f0d8ca5033d139ea713f0893fa216baa65cb167b74a6a167bd6e9a2e",
+    "ts": 1774516366.0251017
+  },
+  "core\\orchestrator.py": {
+    "hash": "bfc4c9048abb7fc3d4af500d8e38f55c2e2f335b13d5102f723f4df7e6da808f",
+    "ts": 1774516366.0251017
+  },
+  "core\\__init__.py": {
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "ts": 1774516366.0251017
+  },
+  "dashboard\\app.py": {
+    "hash": "dd86239a100d1c200aed86f484063b9660141f8aa85485c2594f74130adf1766",
+    "ts": 1774516366.0251017
+  },
+  "dashboard\\__init__.py": {
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "ts": 1774516366.0251017
+  },
+  "dashboard\\templates\\index.html": {
+    "hash": "b2652f3be27a4b3cbdc940f55d8b1b9a231c9800ad7444522380743431d7a5f9",
+    "ts": 1774516366.0261
+  },
+  "dashboard\\templates\\login.html": {
+    "hash": "36e307aa85f8018ccba18c6762274cc2f565ae15b135914420d61c980d0398d6",
+    "ts": 1774516366.0261
+  },
+  "graph\\graph_engine.py": {
+    "hash": "34d87cd65c3f61ed6c5a29b568651ae34be96b5138c314dbcc253ec20a00718d",
+    "ts": 1774516366.0261
+  },
+  "graph\\__init__.py": {
+    "hash": "64be87a8a1049ad02f25bdc17d7a375c1f88d4fcda0160a8150d8c53643eea7c",
+    "ts": 1774516366.0261
+  },
+  "mitre\\t01_reconnaissance.py": {
+    "hash": "f928e86e96fa836b1430c624424b39c7f3c1d6a399f2633c242221c7a1d9f412",
+    "ts": 1774516366.027102
+  },
+  "mitre\\t02_resource_dev.py": {
+    "hash": "2d65ebf8ee6ce8d55c43f21e873dc44cf4d896a03cd083334e827a6fe6df9101",
+    "ts": 1774516366.027102
+  },
+  "mitre\\t03_initial_access.py": {
+    "hash": "e69f6b48af6698d1c715d5913aa2b7b552d0f4c961edf603a55e4842e024782e",
+    "ts": 1774516366.027102
+  },
+  "mitre\\t04_execution.py": {
+    "hash": "86b4addecbdfd25f173e50997952e7a3f47d628ebb0147f181711c487cea1c1d",
+    "ts": 1774516366.027102
+  },
+  "mitre\\t05_persistence.py": {
+    "hash": "b14b8a9d89f314a90dab7fb7c7b3bd031296814aa91a2d3bd0d92c4d513458d6",
+    "ts": 1774516366.027102
+  },
+  "mitre\\t06_privilege_esc.py": {
+    "hash": "8177c11452d2abc3239d85e7e5ab67ea2a3b24c11811a984011f7c4b4e91eb73",
+    "ts": 1774516366.027102
+  },
+  "mitre\\t07_defense_evasion.py": {
+    "hash": "57f16c51fa05087b121d6cd13d5e4c99d7352f92c425dc2075dc62cb0fea7327",
+    "ts": 1774516366.027102
+  },
+  "mitre\\t08_credential_access.py": {
+    "hash": "1bc91d60a7628d8a47995bc4f995b92a2333724844ad4230d4649b5270c9a607",
+    "ts": 1774516366.027102
+  },
+  "mitre\\t09_discovery.py": {
+    "hash": "3affe9a3c285f01481c6435b34e2b2e5ec6f8b7c0fc83557418f2f618efe9d13",
+    "ts": 1774516366.0281012
+  },
+  "mitre\\t10_lateral_movement.py": {
+    "hash": "8ac228639ad0ded7df4b30bdadf33f58e8e39bce67f40600803392218aa8c1d2",
+    "ts": 1774516366.0281012
+  },
+  "mitre\\t11_collection.py": {
+    "hash": "16cfc04c34519d562e1d377323efbd4ba4f482b56621b8992e735d977f5a8256",
+    "ts": 1774516366.0281012
+  },
+  "mitre\\t12_c2.py": {
+    "hash": "53f790e7958d98ce51584bdf75ddd6b17955ee7511d9cf95b6465bbc2bda2268",
+    "ts": 1774516366.0281012
+  },
+  "mitre\\t13_exfiltration.py": {
+    "hash": "32d12f8f68f414f820e55f4f8ebbb1ed6db7db9393bd7008c6a1c922bab645f1",
+    "ts": 1774516366.0281012
+  },
+  "mitre\\t14_impact.py": {
+    "hash": "048271df465de74a811523b778709d13ad791302f946aae8c9f8f24c278d2e0c",
+    "ts": 1774516366.0281012
+  },
+  "mitre\\t15_honeypot.py": {
+    "hash": "143c66dafe343b329747423086915bf99730ab3ec881233659121404642d69a3",
+    "ts": 1774516366.0281012
+  },
+  "mitre\\t16_threat_intel.py": {
+    "hash": "2a00f6f867224afb83097e6e66ba5bbd59f2afd595dd4028ac2104f2c82a64e1",
+    "ts": 1774516366.0281012
+  },
+  "mitre\\tactical_engine.py": {
+    "hash": "b16cd966d2106e051a5decd5e9512918275d3223c41eaa79ade56b4ca6bbe2be",
+    "ts": 1774516366.0281012
+  },
+  "mitre\\__init__.py": {
+    "hash": "3093b01951c330cc48dbe685c4eae55ae6f552601b0d143c21a3befbe8404780",
+    "ts": 1774516366.0281012
+  },
+  "monitor\\linux_monitor.py": {
+    "hash": "b71f0a47cd8d4ea6dcc7294b2a86379da01d0fc9d24b61542367cbb31cc5bba2",
+    "ts": 1774516366.0291045
+  },
+  "monitor\\network_monitor.py": {
+    "hash": "bac1af837aa3b2865a319c2309bb6c05ae0b5b4780779b05ac99508082136bb6",
+    "ts": 1774516366.0291045
+  },
+  "monitor\\process_monitor.py": {
+    "hash": "5fe4c5fd03aee3a0972dc6c09da04c7118d62526732667a259711364b0ef7417",
+    "ts": 1774516366.0291045
+  },
+  "monitor\\windows_monitor.py": {
+    "hash": "c46f7356df2e83f924c01411e23c64e2536e29fe17b8ca9a59cdba90849b55dc",
+    "ts": 1774516366.0291045
+  },
+  "monitor\\__init__.py": {
+    "hash": "fbf7e99a4ce43b918cd59feada02fd56ae21bf9a7054c74cc84fc5f4e71a1f53",
+    "ts": 1774516366.0291045
+  },
+  "prevention\\actions.py": {
+    "hash": "e9c24c4c1ec3b2c1f67ef2800b6b2b7bdd5fcb219a5ec3aff4e2022b5da42bca",
+    "ts": 1774516366.0291045
+  },
+  "prevention\\approval.py": {
+    "hash": "b744da062b74079906cab894a3daef6a60a3ab918165bd4cfd16dff258bd4e0c",
+    "ts": 1774516366.0291045
+  },
+  "prevention\\audit_log.py": {
+    "hash": "f17db28fe4358dffdceca62257e033ce3dba631a0f492efa92563ed921c595d3",
+    "ts": 1774516366.0291045
+  },
+  "prevention\\engine.py": {
+    "hash": "5d1a217bb5971a8fd8b0146b80d865fe3eb32d2035aa56d1e1a65ef9eced3289",
+    "ts": 1774516366.0291045
+  },
+  "prevention\\hardware_monitor.py": {
+    "hash": "9fabcd68d92f623a652f59e4add186c22f53399199e12840cba8831ab1b38e9b",
+    "ts": 1774516366.0291045
+  },
+  "prevention\\security_advisor.py": {
+    "hash": "ed4d65d826cc00479840b1ec7aea1b5c9bee2cb9d8e5f5fcd2df734e296322b6",
+    "ts": 1774516366.0301006
+  },
+  "prevention\\__init__.py": {
+    "hash": "53eb666479448b9f17cad9e9aeecd7f78b693edaa959eaa72757ee2dc4e060d0",
+    "ts": 1774516366.0301006
+  },
+  "security\\data_security.py": {
+    "hash": "c13de77e348d8ae0bd1df54198e84bea919417e7f8ca482da26302722529a6d1",
+    "ts": 1774516366.0301006
+  },
+  "security\\__init__.py": {
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "ts": 1774516366.0301006
+  },
+  "simulation\\__init__.py": {
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "ts": 1774516366.0301006
+  },
+  "simulation\\scenarios\\brute_force.py": {
+    "hash": "51dc4fda69cc9f7e9e6f869e96586d2ee256c54ac723f79214a75217be69e0c8",
+    "ts": 1774516366.0311034
+  },
+  "simulation\\scenarios\\c2_beacon.py": {
+    "hash": "7bbe4679ab700220a2d98e87ab4b476adb2194d5ee066e25ee321e37cca69829",
+    "ts": 1774516366.0311034
+  },
+  "simulation\\scenarios\\c2_remote_access.py": {
+    "hash": "b3e42d3968972c0ec14f462e3a7faaf255278977741df1cee8b41bab63104d40",
+    "ts": 1774516366.0311034
+  },
+  "simulation\\scenarios\\collection.py": {
+    "hash": "f0bf328bdc62174e4ae269cc989e57cf26362b38efeac872ccf568ac2883e9d7",
+    "ts": 1774516366.0311034
+  },
+  "simulation\\scenarios\\credential_dumping.py": {
+    "hash": "395ed23cfba81437bd812e0966bfa237f03d884e37372e99ad00458799037e0f",
+    "ts": 1774516366.0321088
+  },
+  "simulation\\scenarios\\discovery.py": {
+    "hash": "56163aaddaddb5a5e4eb4d931f8020252f1ba65483ed72b068825d124a05c638",
+    "ts": 1774516366.0321088
+  },
+  "simulation\\scenarios\\exfiltration.py": {
+    "hash": "b1e846faede1c1b6dbfc0a9f176500c2698b2c0e623ed8e17c130e63fc59d999",
+    "ts": 1774516366.0321088
+  },
+  "simulation\\scenarios\\honeypot.py": {
+    "hash": "c2d63ea68d1d9010f343ca95ac649a1d70d06f42ef8e0064b5a0004525cf6189",
+    "ts": 1774516366.033103
+  },
+  "simulation\\scenarios\\impact.py": {
+    "hash": "8d62d25bf8b8d18236466f71223133988c774befb88683f6e0a219ebab5e7dae",
+    "ts": 1774516366.033103
+  },
+  "simulation\\scenarios\\initial_access.py": {
+    "hash": "94bd2f3f2dd3ffb1c5c44c741f89f81b86c3c37f042232a8be5a607c0ca90058",
+    "ts": 1774516366.033103
+  },
+  "simulation\\scenarios\\lateral_movement.py": {
+    "hash": "d408c45b07b5cb87faa230ed5fa61f2f21495fe1d8643efac9f37be64582e049",
+    "ts": 1774516366.033103
+  },
+  "simulation\\scenarios\\privilege_escalation.py": {
+    "hash": "797aae5aec1fae30cdc3b60004d5d831605508c005f135101f190c641be706dd",
+    "ts": 1774516366.0341003
+  },
+  "simulation\\scenarios\\ransomware.py": {
+    "hash": "2950e875c4fdf699ebb1a19342580f6a256be06c0bd036dfb4d3e0dbaa3dad21",
+    "ts": 1774516366.0341003
+  },
+  "simulation\\scenarios\\threat_intel.py": {
+    "hash": "4337074f9e3d628ca308117d90a48b8e475d77e022b198362af72d2cc99610ae",
+    "ts": 1774516366.0341003
+  },
+  "simulation\\scenarios\\__init__.py": {
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "ts": 1774516366.0341003
+  },
+  "utils\\audit_log.py": {
+    "hash": "2dcef29e8e3ae3d93eba5224bc5e1f08adb593c671842ea87a149e42c2dbb959",
+    "ts": 1774516366.0341003
+  },
+  "utils\\logger.py": {
+    "hash": "b12411a50a1b4f3fb59daab3a3c4bcb45f427cce0475d0c2d9eae30d9a9a9676",
+    "ts": 1774516366.0341003
+  },
+  "utils\\memory.py": {
+    "hash": "6d3c0da32ad5b7af4e8987dcfd75579035462f2ef5dc2efff21d93698f42f5c6",
+    "ts": 1774516366.0341003
+  },
+  "utils\\patterns.py": {
+    "hash": "2ad2361993bbc28b6a08f9519feefc5d39b69445390d383c86a488692b561bdc",
+    "ts": 1774516366.0341003
+  },
+  "utils\\response.py": {
+    "hash": "6fb405d512f3206e159f99e167517450aca6474334faef8de4f0a672ce6ff5a9",
+    "ts": 1774516366.0351017
+  },
+  "utils\\scanner.py": {
+    "hash": "5e7e8f4c26ffd2c841191d2bc8d3309670f878550cff3268291f65bdc9de32a6",
+    "ts": 1774516366.0351017
+  },
+  "utils\\__init__.py": {
+    "hash": "45aac2ba1eadf26b2c177c8bae922945515e0f1d11cdf6edd5dbc929b8a9d41d",
+    "ts": 1774516366.0351017
+  }
+}
